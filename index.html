@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Your Local Time</title>
+  </head>
+  <body>
+  <div class="clock-frame">
+  <svg width="300" height="300" viewBox="0 0 300 300">
+    <!-- Outer Circle -->
+    <circle cx="150" cy="150" r="145" fill="#111" stroke="#00ffe5" stroke-width="4"/>
+
+    <!-- Clock Center -->
+    <circle cx="150" cy="150" r="5" fill="#00ffe5"/>
+
+    <!-- Clock Hands -->
+    <line id="hour" x1="150" y1="150" x2="150" y2="100" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+    <line id="minute" x1="150" y1="150" x2="150" y2="70" stroke="#00ffe5" stroke-width="4" stroke-linecap="round"/>
+    <line id="second" x1="150" y1="150" x2="150" y2="60" stroke="#ff4081" stroke-width="2" stroke-linecap="round"/>
+<!-- Add any missing hours for a complete ring -->
+  </svg>
+</div>
+    <script src="script.js">
+    </script>
+  </body>
+</html>
